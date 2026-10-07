@@ -1,0 +1,15 @@
+name: Prueba del Self-hosted Runner
+
+on:
+  push:
+
+jobs:
+  prueba:
+    runs-on: self-hosted
+
+    steps:
+      - name: Mostrar mensaje
+        run: echo "El self-hosted runner funciona correctamente"
+
+      - name: Mostrar sistema
+        run: uname -a
